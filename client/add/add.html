@@ -1,0 +1,37 @@
+<template name="add">
+  <div class="signup-overlay">
+    <a href="/"><i class="fa fa-times"></i></a>
+    <form>
+      <label for="cname">Your company name:</label>
+      <input type="text" id="cname"><br>
+      <label for="url">Your company URL:</label>
+      <input type="text" id="url"><br>
+      <label for="names">The founders' names (add one at a time):</label><br>
+      <input type="text" id="names"><button id='team-btn'><i class="fa fa-plus"></i></button><br>
+      <ul class="tags">
+        {{#each names}}
+          <li>{{value}}</li>
+        {{/each}}
+      </ul>
+    
+      <label for="logo">Our Logo URL:</label><br>
+      <input type="text" id="logo"><button id='logo-btn'><i class="fa fa-plus"></i></button><br>
+    
+      {{#if logo}}
+      <img src="{{logo}}"><br>
+      {{/if}}
+    
+      <label for="description">This is what we do (250 words or less):</label><br>
+      <textarea id="description"></textarea><br>
+    
+      <label for="tags">These are some relevant tags:</label><br>
+      <input type="text" id="tags"><button id='tag-btn'><i class="fa fa-plus"></i></button><br>
+      <ul class="tags">
+        {{#each tags}}
+          <li>{{value}}</li>
+        {{/each}}
+      </ul>
+      <button id="add-startup">ADD MY STARTUP</button>
+    </form>
+  </div>
+</template>

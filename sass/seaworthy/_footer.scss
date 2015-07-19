@@ -1,0 +1,30 @@
+footer {
+	background-color: $grey;
+	width: 100%;
+	font-family: $opensans;
+	margin-top: 3%;
+	bottom: 0; left: 0;
+	padding: 20px;
+
+	p {
+		color: $white;
+		margin: 0 auto;
+		width: 88%;
+		font-size: 13px;
+    	line-height: 18px;
+    	text-align: center;
+	}
+
+	span {
+		color: $orange;
+	}
+
+	a {
+		color: $teal;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+ul.tags {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  li {
+    background: $teal;
+    color: $white;
+    padding: 5px;
+  }
+  li::before { content: "#"; }
+}

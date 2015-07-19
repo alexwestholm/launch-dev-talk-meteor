@@ -1,0 +1,86 @@
+nav {
+  position: absolute;
+  top: 0; left: 0;
+  display: table;
+  width: 100%;
+  background-color: #3a3943;
+  z-index: 99;
+  font-family: $raleway;
+
+  div.logo {
+    display: table-cell;
+    width: 85%;
+    padding: 0.5em 2em;
+    vertical-align: middle;
+    i {
+      padding: 10px;
+      border: 3px solid $teal;
+      border-radius: 200px;
+      background: $white;
+      margin-right: 0.5em;
+      color: $grey;
+      vertical-align: middle;
+    }
+    p {
+      display: inline-block;
+      font-size: 1.25em;
+      color: $pink;
+      vertical-align: middle;
+
+      @include breakpoint ($medium) {
+        font-size: 1.75em;
+      }
+
+      strong {
+        display: block;
+        color: $teal;
+
+      }
+    }
+  }
+ 
+  div.add-startup {
+    display: table-cell;
+    width: 15%;
+    top: 0;
+    right: 0;
+    vertical-align: middle;
+    background: $orange;
+    word-wrap: break-word;
+    text-align: center;
+
+    a {
+      height: 100%;
+      max-width: 100%;
+      //display: table-cell;
+      background: $orange;
+      color: $white;
+      border: none;
+      margin: 0;
+
+      i {
+        vertical-align: middle;
+        position: relative;
+
+        @include breakpoint ($large) {
+          left: 1%;
+        }
+      }
+    
+      span.add { 
+        display: none;
+        vertical-align: middle; 
+        max-width: 100%;
+        padding-left: 10px;
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+
+        @include breakpoint ($large) {
+          display: inline;
+        }
+
+      }
+    }
+  }
+}

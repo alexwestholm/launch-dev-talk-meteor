@@ -1,0 +1,528 @@
+/* line 5, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* App Specific Styles */
+/* line 1, ../../sass/seaworthy/_nav.scss */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  width: 100%;
+  background-color: #3a3943;
+  z-index: 99;
+  font-family: "Raleway", sans-serif;
+}
+/* line 10, ../../sass/seaworthy/_nav.scss */
+nav div.logo {
+  display: table-cell;
+  width: 85%;
+  padding: 0.5em 2em;
+  vertical-align: middle;
+}
+/* line 15, ../../sass/seaworthy/_nav.scss */
+nav div.logo i {
+  padding: 10px;
+  border: 3px solid #33c1c9;
+  border-radius: 200px;
+  background: #fff;
+  margin-right: 0.5em;
+  color: #3a3943;
+  vertical-align: middle;
+}
+/* line 24, ../../sass/seaworthy/_nav.scss */
+nav div.logo p {
+  display: inline-block;
+  font-size: 1.25em;
+  color: #dd554f;
+  vertical-align: middle;
+}
+@media (min-width: 47.5em) {
+  /* line 24, ../../sass/seaworthy/_nav.scss */
+  nav div.logo p {
+    font-size: 1.75em;
+  }
+}
+/* line 34, ../../sass/seaworthy/_nav.scss */
+nav div.logo p strong {
+  display: block;
+  color: #33c1c9;
+}
+/* line 42, ../../sass/seaworthy/_nav.scss */
+nav div.add-startup {
+  display: table-cell;
+  width: 15%;
+  top: 0;
+  right: 0;
+  vertical-align: middle;
+  background: #f2a334;
+  word-wrap: break-word;
+  text-align: center;
+}
+/* line 52, ../../sass/seaworthy/_nav.scss */
+nav div.add-startup a {
+  height: 100%;
+  max-width: 100%;
+  background: #f2a334;
+  color: #fff;
+  border: none;
+  margin: 0;
+}
+/* line 61, ../../sass/seaworthy/_nav.scss */
+nav div.add-startup a i {
+  vertical-align: middle;
+  position: relative;
+}
+@media (min-width: 65em) {
+  /* line 61, ../../sass/seaworthy/_nav.scss */
+  nav div.add-startup a i {
+    left: 1%;
+  }
+}
+/* line 70, ../../sass/seaworthy/_nav.scss */
+nav div.add-startup a span.add {
+  display: none;
+  vertical-align: middle;
+  max-width: 100%;
+  padding-left: 10px;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+@media (min-width: 65em) {
+  /* line 70, ../../sass/seaworthy/_nav.scss */
+  nav div.add-startup a span.add {
+    display: inline;
+  }
+}
+
+/* line 1, ../../sass/seaworthy/_header.scss */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-size: cover;
+  height: 50%;
+  overflow-x: hidden;
+}
+/* line 9, ../../sass/seaworthy/_header.scss */
+header img {
+  height: 550px;
+}
+@media (min-width: 47.5em) {
+  /* line 9, ../../sass/seaworthy/_header.scss */
+  header img {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 65em) {
+  /* line 9, ../../sass/seaworthy/_header.scss */
+  header img {
+    width: 100%;
+  }
+}
+/* line 24, ../../sass/seaworthy/_header.scss */
+header p {
+  float: left;
+  top: 30%;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 400;
+  z-index: 100;
+  position: absolute;
+  color: white;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+@media (min-width: 47.5em) {
+  /* line 24, ../../sass/seaworthy/_header.scss */
+  header p {
+    top: 45%;
+  }
+}
+@media (min-width: 65em) {
+  /* line 24, ../../sass/seaworthy/_header.scss */
+  header p {
+    top: 50%;
+    font-size: 4em;
+  }
+}
+/* line 46, ../../sass/seaworthy/_header.scss */
+header input {
+  z-index: 100;
+  position: absolute;
+  padding: 2.5em;
+  width: 65%;
+  top: 70%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: .75em;
+  border: none;
+  height: 75px;
+}
+@media (min-width: 65em) {
+  /* line 46, ../../sass/seaworthy/_header.scss */
+  header input {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+/* line 65, ../../sass/seaworthy/_header.scss */
+header button {
+  z-index: 100;
+  position: absolute;
+  top: 70%;
+  border: none;
+  font-size: 2em;
+  background: #33c1c9;
+  color: #fff;
+  height: 75px;
+  width: 75px;
+  margin-left: 75%;
+  cursor: pointer;
+}
+@media (min-width: 65em) {
+  /* line 65, ../../sass/seaworthy/_header.scss */
+  header button {
+    margin-left: 70%;
+  }
+}
+
+/* line 1, ../../sass/seaworthy/_list.scss */
+main {
+  position: relative;
+  margin-top: 2%;
+}
+/* line 5, ../../sass/seaworthy/_list.scss */
+main ul.companies {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 9, ../../sass/seaworthy/_list.scss */
+main ul.companies p, main ul.companies li, main ul.companies span {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 15, ../../sass/seaworthy/_list.scss */
+main ul.companies span {
+  font-weight: 600;
+}
+/* line 19, ../../sass/seaworthy/_list.scss */
+main ul.companies ul.founders {
+  display: inline;
+}
+/* line 23, ../../sass/seaworthy/_list.scss */
+main ul.companies li.co-item {
+  position: relative;
+  height: 100%;
+}
+/* line 28, ../../sass/seaworthy/_list.scss */
+main ul.companies li.co-item:hover .actions {
+  visibility: visible;
+}
+/* line 33, ../../sass/seaworthy/_list.scss */
+main ul.companies li.co-item .actions {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 10px;
+  width: 100%;
+  background: #3a3943;
+  color: #fff;
+}
+/* line 42, ../../sass/seaworthy/_list.scss */
+main ul.companies li.co-item .actions i {
+  padding: 0 10px;
+  color: #fff;
+}
+/* line 47, ../../sass/seaworthy/_list.scss */
+main ul.companies li.co-item .actions a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 54, ../../sass/seaworthy/_list.scss */
+main ul.companies > li {
+  padding: 15px;
+  display: inline-block;
+  background-color: #f2f2f2;
+  position: relative;
+  margin-top: 5%;
+  width: 100%;
+}
+@media (min-width: 47.5em) {
+  /* line 54, ../../sass/seaworthy/_list.scss */
+  main ul.companies > li {
+    width: 46%;
+    margin: 1%;
+  }
+}
+@media (min-width: 65em) {
+  /* line 54, ../../sass/seaworthy/_list.scss */
+  main ul.companies > li {
+    width: 22%;
+    margin: 1%;
+  }
+}
+/* line 72, ../../sass/seaworthy/_list.scss */
+main ul.companies > li img {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* line 80, ../../sass/seaworthy/_list.scss */
+main ul.companies > li h3 {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #f2a334;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+/* line 88, ../../sass/seaworthy/_list.scss */
+main ul.companies > li li {
+  display: inline-block;
+}
+
+/* line 1, ../../sass/seaworthy/_tags.scss */
+ul.tags {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+/* line 4, ../../sass/seaworthy/_tags.scss */
+ul.tags li {
+  background: #33c1c9;
+  color: #fff;
+  padding: 5px;
+}
+/* line 9, ../../sass/seaworthy/_tags.scss */
+ul.tags li::before {
+  content: "#";
+}
+
+/* line 1, ../../sass/seaworthy/_footer.scss */
+footer {
+  background-color: #3a3943;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 3%;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+/* line 9, ../../sass/seaworthy/_footer.scss */
+footer p {
+  color: #fff;
+  margin: 0 auto;
+  width: 88%;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+/* line 18, ../../sass/seaworthy/_footer.scss */
+footer span {
+  color: #f2a334;
+}
+/* line 22, ../../sass/seaworthy/_footer.scss */
+footer a {
+  color: #33c1c9;
+  text-decoration: none;
+}
+/* line 26, ../../sass/seaworthy/_footer.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, ../../sass/seaworthy/_signup.scss */
+.signup-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #16161d;
+  color: #fff;
+}
+/* line 7, ../../sass/seaworthy/_signup.scss */
+.signup-overlay .tags {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 100%;
+}
+/* line 13, ../../sass/seaworthy/_signup.scss */
+.signup-overlay .tags li {
+  display: inline;
+  background-color: #33c1c9;
+  margin-top: 10px;
+}
+/* line 20, ../../sass/seaworthy/_signup.scss */
+.signup-overlay .fa-times {
+  color: #fff;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+/* line 29, ../../sass/seaworthy/_signup.scss */
+.signup-overlay img {
+  border: 3px solid #fff;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+/* line 36, ../../sass/seaworthy/_signup.scss */
+.signup-overlay form {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 8%;
+  padding-bottom: 10%;
+}
+/* line 45, ../../sass/seaworthy/_signup.scss */
+.signup-overlay form input, .signup-overlay form textarea {
+  border: none;
+}
+/* line 47, ../../sass/seaworthy/_signup.scss */
+.signup-overlay form button {
+  display: inline;
+  height: 50px;
+  border: none;
+  background-color: #33c1c9;
+  width: 50px;
+  cursor: pointer;
+}
+@media (min-width: 65em) {
+  /* line 47, ../../sass/seaworthy/_signup.scss */
+  .signup-overlay form button {
+    width: 5%;
+  }
+}
+/* line 59, ../../sass/seaworthy/_signup.scss */
+.signup-overlay form button i {
+  color: white;
+}
+/* line 64, ../../sass/seaworthy/_signup.scss */
+.signup-overlay form #add-startup {
+  height: 50px;
+  width: 300px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f2a334;
+  margin-top: 20px;
+}
+@media (min-width: 47.5em) {
+  /* line 64, ../../sass/seaworthy/_signup.scss */
+  .signup-overlay form #add-startup {
+    float: right;
+  }
+}
+/* line 77, ../../sass/seaworthy/_signup.scss */
+.signup-overlay form #description {
+  width: 100%;
+  height: 150px;
+  vertical-align: top;
+}
+/* line 84, ../../sass/seaworthy/_signup.scss */
+.signup-overlay form label {
+  padding-top: 10px;
+}
+/* line 88, ../../sass/seaworthy/_signup.scss */
+.signup-overlay form input {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 80%;
+  word-wrap: break-word;
+}
+@media (min-width: 65em) {
+  /* line 88, ../../sass/seaworthy/_signup.scss */
+  .signup-overlay form input {
+    width: 95%;
+  }
+}
+
+/* line 16, ../../sass/screen.scss */
+html {
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+/* line 21, ../../sass/screen.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}

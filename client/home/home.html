@@ -1,0 +1,31 @@
+<template name="home">
+  <nav>
+    <div class="logo">
+      <i class="fa fa-anchor fa-3x"></i> 
+      <p>Made <strong>SEAWORTHY</strong></p>
+    </div>
+    <div class="add-startup">
+    <a href="{{pathFor route='add'}}">
+      <i class="fa fa-plus fa-2x"></i>
+      <span class="add">Add Your Startup</span>
+    </a>
+    </div>
+  </nav>
+  
+  <header>
+    <img src="img/seaworthy.png">
+    <div class="search-button">
+    <form id="search">
+      <p>LOCAL ANNAPOLIS STARTUPS</p>
+      <input id="search-term" type="text" placeholder="Search startups by name, keyword, founders, etc.">
+      <button><i class="fa fa-search"></i> </button>
+    </form>
+  </div>
+  </header>
+
+  {{> companies}}
+
+  <footer class="page-footer">
+    <p><span>Made Seaworthy</span> is supported by <a href="http://www.meetup.com/launchannapolis/">Launch Annapolis</a>, a group of local entrepreneurs and startup founders. For more information, contact <a href="#">hello@madeseaworthy.in.</a> To manage your posts, <a href="#" id="login">login</a></p>
+  </footer>
+</template>

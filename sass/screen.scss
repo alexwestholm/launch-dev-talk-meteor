@@ -1,0 +1,21 @@
+@import "compass/reset";
+a { text-decoration: none; }
+
+@import "breakpoint";
+$breakpoint-to-ems: true;
+
+/* App Specific Styles */
+@import "seaworthy/variables";
+@import "seaworthy/nav";
+@import "seaworthy/header";
+@import "seaworthy/list";
+@import "seaworthy/tags";
+@import "seaworthy/footer";
+@import "seaworthy/signup";
+
+html {
+  font-weight: $normal;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }

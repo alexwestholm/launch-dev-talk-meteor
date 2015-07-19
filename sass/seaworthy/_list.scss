@@ -1,0 +1,91 @@
+main {
+position: relative;
+margin-top: 2%;
+
+ul.companies {
+  width: 90%;
+  margin: 0 auto;
+
+  p, li, span {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: $opensans;
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  ul.founders {
+    display: inline;
+  }
+
+  li.co-item {
+    position: relative;
+    height: 100%;
+
+    &:hover {
+      .actions {
+        visibility: visible;
+      }
+    }
+
+    .actions {
+      visibility: hidden;
+      position: absolute;
+      bottom: 0; left: 0;
+      padding: 20px 10px;
+      width: 100%;  
+      background: $grey;
+      color: $white;
+
+      i {
+        padding: 0 10px;
+        color: $white;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  > li {
+    padding: 15px;
+    display: inline-block;
+    background-color: $light-grey;
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+
+    @include breakpoint ($medium) {
+      width: 46%;
+      margin: 1%;
+    }
+
+    @include breakpoint($large){
+      width: 22%;
+      margin: 1%;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    h3 { 
+      font-weight: $bold;
+      font-size: 1.5em;
+      color: $orange;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+    }
+    
+    li { display: inline-block; }
+  }
+}
+}

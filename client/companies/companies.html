@@ -1,0 +1,37 @@
+<template name="companies">
+  <main>
+    {{#if search_term }}
+      Searching by {{ search_term }} (<a href="#" id="clear-search">clear</a>)
+    {{/if}}
+    <ul class="companies">
+      {{#each companies}}
+        <li class="co-item">
+          <a href="{{url}}">
+            <img src="{{logo}}">
+            <h3>{{name}} ></h3>
+          </a>
+          <span>Team:</span>
+          <ul class="founders" >
+            {{#each founders}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <p>{{description}}</p>
+          <ul class="tags">
+            {{#each tags}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          {{#if canManage}}
+            <div class="actions">
+              <a href="#" class='delete'><i class="fa fa-trash-o"></i></a>
+              {{#if publishable}}
+                <a href="#" class='publish'><i class="fa fa-check-circle-o"></i></a>
+              {{/if}}
+            </div>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  </main>
+</template>
